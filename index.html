@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ranit — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-social">
+        <a href="https://github.com/ranit57" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/ranit-pal-5b2488241/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h2>Hi — I'm Ranit</h2>
+          <p class="lead">AI Engineer — building reliable, production-ready ML systems.</p>
+          <p class="cta-row">
+            <a class="btn" href="#resume">View Resume</a>
+            <a class="btn ghost" href="#projects">See Projects</a>
+          </p>
+        </div>
+        <div class="profile-card">
+          <div class="avatar">R</div>
+          <div>
+            <p class="muted">Resume</p>
+            <p class="small">Ranit_ML_Eng_2025.pdf</p>
+            <p><a class="download" href="Ranit_ML_Eng_2025.pdf" download>Download PDF</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h3>About Me</h3>
+      <div class="about-content">
+        <p class="about-text">
+          AI Engineer with 2+ years of experience building production-grade AI systems. Expertise in Generative AI, Agentic AI, and LLMOps, with strong skills in designing scalable ML pipelines, fine-tuning and integrating LLMs, and deploying autonomous AI agents. Currently at HCLTech, delivering end-to-end AI solutions on AWS using vector databases and cloud-native architectures.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="container section">
+      <h3>Experience</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content highlight">
+            <h4>Data Scientist <span class="role-meta">HCLTech</span></h4>
+            <p class="timeline-date">2024 – Present | Noida</p>
+            <p class="timeline-tech">Python, LLMOps, Pinecone, SageMaker, AWS Bedrock, Fargate, ChromaDB, MCP, LangChain, LangGraph, Autogen, CrewAI, LangSmith, Azure</p>
+            <ul class="timeline-bullets">
+              <li>Developed a DQN-based rApp for real-time energy optimisation in Open RAN, leveraging live Viavi data and insights from network research.</li>
+              <li>Finetuned Mistral-7B on robotics data to generate accurate, context-aware robot transcripts.</li>
+              <li>Built an Agentic AI SmartDesk Assistant using MCP, deployed on AWS with RAG, Bedrock, Lambda, and vector search for autonomous document processing and action execution.</li>
+              <li>Built a SuperApp using Agentic AI (CrewAI) to autonomously orchestrate rApps, dynamically managing their lifecycle based on real-time network requirements, deployed on AWS (EC2, ECR).</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>ML Research Intern <span class="role-meta">IIIT Delhi</span></h4>
+            <p class="timeline-date">Aug 2023 – May 2024</p>
+            <p class="timeline-tech">Feature Engineering, KNN, PCA, Model Optimization</p>
+            <ul class="timeline-bullets">
+              <li>Collected and integrated data from diverse sources to predict phosphorylated sites, applying feature engineering techniques.</li>
+              <li>Enhanced model accuracy from 80.6% to 89.8% and F1 score from 0.72 to 0.88.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>API Developer & Research Intern <span class="role-meta">IIIT Delhi</span></h4>
+            <p class="timeline-date">Jan 2023 – May 2023</p>
+            <p class="timeline-tech">Spring Boot, REST APIs, MongoDB, Postman</p>
+            <ul class="timeline-bullets">
+              <li>Designed and deployed robust RESTful APIs for Recipe DB website (CoSyLab).</li>
+              <li>Enabled users to discover recipes based on region and country with efficient MongoDB queries.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="container section">
+      <h3>Resume / PDF</h3>
+      <div class="resume-wrap">
+        <iframe src="Ranit_ML_Eng_2025.pdf" title="Resume" class="resume-frame"></iframe>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h3>Projects</h3>
+      <div class="grid projects-grid" id="projectsGrid">
+        <article class="card">
+          <div class="card-header">
+            <h4>Summarise and Recommend: BERT-Based NLP Recommender</h4>
+            <button class="toggle-details">See more details</button>
+          </div>
+          <div class="project-summary">
+            <p class="project-date">Feb 2023 – May 2023</p>
+          </div>
+          <div class="project-details">
+            <p>Content-based filtering using research paper titles and abstracts with section-wise abstractive and extractive summarization.</p>
+            <p class="project-tech">Python, TensorFlow, BERT, Scikit-learn, NLTK</p>
+            <p class="card-links"><a href="https://github.com/ranit57/Reaearch-Paper-Recommendation-System" target="_blank">GitHub</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h4>TwiSafe: NLP-Powered Abusive Tweet Detector</h4>
+            <button class="toggle-details">See more details</button>
+          </div>
+          <div class="project-summary">
+            <p class="project-date">Nov 2023 – Dec 2023</p>
+          </div>
+          <div class="project-details">
+            <p>Twitter comment classification using SVM, Voting Classifier and ML models. Achieved 90% accuracy and 0.92 F1-score.</p>
+            <p class="project-tech">Python, Scikit-learn, TensorFlow, NLTK</p>
+            <p class="card-links"><a href="https://github.com/ranit57/Abusive-Comment-Detection-from-Twitter" target="_blank">GitHub</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h4>Telegram ChatBot with Mistral-7B</h4>
+            <button class="toggle-details">See more details</button>
+          </div>
+          <div class="project-summary">
+            <p class="project-date">Oct 2023 – Nov 2023</p>
+          </div>
+          <div class="project-details">
+            <p>Intelligent Telegram bot using Mistral 7B optimized via QLoRA with SerpAPI integration for real-time queries and contextual memory.</p>
+            <p class="project-tech">Mistral-7B, QLoRA, SerpAPI, Async</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h4>FastAPI GenAI Document Analyzer with FAISS</h4>
+            <button class="toggle-details">See more details</button>
+          </div>
+          <div class="project-summary">
+            <p class="project-date">Sep 2023 – Nov 2023</p>
+          </div>
+          <div class="project-details">
+            <p>GenAI app with LLaMA3-8B, LangChain, and FAISS for auto-generating contextual Q&A from uploaded documents.</p>
+            <p class="project-tech">LLaMA3-8B, QLoRA, LangChain, FAISS, FastAPI</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h4>Phosphorylation Site Prediction</h4>
+            <button class="toggle-details">See more details</button>
+          </div>
+          <div class="project-summary">
+            <p class="project-date">Aug 2023 – May 2024</p>
+          </div>
+          <div class="project-details">
+            <p>ML model for predicting phosphorylated sites with advanced feature engineering. Improved accuracy from 80.6% to 89.8% and F1 from 0.72 to 0.88.</p>
+            <p class="project-tech">KNN, PCA, Feature Engineering</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h4>Recipe DB RESTful APIs</h4>
+            <button class="toggle-details">See more details</button>
+          </div>
+          <div class="project-summary">
+            <p class="project-date">Jan 2023 – May 2023</p>
+          </div>
+          <div class="project-details">
+            <p>Designed and deployed robust RESTful APIs for a Recipe DB website (CoSyLab). Enabled users to discover recipes by region and country using efficient MongoDB queries.</p>
+            <p class="project-tech">Spring Boot, REST APIs, MongoDB, Postman</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h4>PyLog-Subject-Matcher</h4>
+            <button class="toggle-details">See more details</button>
+          </div>
+          <div class="project-summary">
+            <p class="project-date">Research Project</p>
+          </div>
+          <div class="project-details">
+            <p>Subject recommendation engine leveraging Prolog's logical reasoning with Python versatility for intelligent subject matching.</p>
+            <p class="project-tech">Prolog, Python</p>
+            <p class="card-links"><a href="https://github.com/ranit57/PyLog-Subject-Matcher" target="_blank">GitHub</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h4>Agentic AI RAG Chatbot Document Analyzer</h4>
+            <button class="toggle-details">See more details</button>
+          </div>
+          <div class="project-summary">
+            <p class="project-date">Recent Project</p>
+          </div>
+          <div class="project-details">
+            <p>RAG-based document analyzer and chatbot using LangChain and agentic patterns for intelligent document processing.</p>
+            <p class="project-tech">LangChain, RAG, Agentic AI</p>
+            <p class="card-links"><a href="https://github.com/ranit57/Agentic-AI-based-RAG-chatbot-Document-Analyzer" target="_blank">GitHub</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container section">
+      <h3>Technical Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h5>AI & ML</h5>
+          <div class="skills">
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Deep Learning</span>
+            <span class="skill">GenAI</span>
+            <span class="skill">Agentic AI</span>
+            <span class="skill">LLMOps</span>
+            <span class="skill">RAG</span>
+            <span class="skill">LLM Fine-Tuning</span>
+            <span class="skill">PEFT (LoRA, QLoRA)</span>
+            <span class="skill">Prompt Engineering</span>
+            <span class="skill">LLM Evaluation</span>
+            <span class="skill">Reinforcement Learning (DQN)</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h5>Frameworks & Libraries</h5>
+          <div class="skills">
+            <span class="skill">LangChain</span>
+            <span class="skill">LangGraph</span>
+            <span class="skill">CrewAI</span>
+            <span class="skill">Hugging Face</span>
+            <span class="skill">PyTorch</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">FAISS</span>
+            <span class="skill">Scikit-learn</span>
+            <span class="skill">NLTK</span>
+            <span class="skill">LlamaIndex</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h5>Cloud & Infrastructure</h5>
+          <div class="skills">
+            <span class="skill">AWS</span>
+            <span class="skill">Azure</span>
+            <span class="skill">SageMaker</span>
+            <span class="skill">AWS Bedrock</span>
+            <span class="skill">Lambda</span>
+            <span class="skill">EC2</span>
+            <span class="skill">Fargate</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Kubernetes</span>
+            <span class="skill">CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h5>Databases & Vector Stores</h5>
+          <div class="skills">
+            <span class="skill">Pinecone</span>
+            <span class="skill">ChromaDB</span>
+            <span class="skill">FAISS</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Vector Search</span>
+            <span class="skill">Hybrid Search</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h5>Development & Tools</h5>
+          <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">Spring Boot</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">MCP</span>
+            <span class="skill">Git / GitHub</span>
+            <span class="skill">Linux</span>
+            <span class="skill">Postman</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h3>Contact</h3>
+      <p>Prefer email? <a href="mailto:ranitpal57@gmail.com">ranitpal57@gmail.com</a></p>
+      <p class="social-row">
+        <a class="social-link" href="https://github.com/ranit57" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="social-link" href="https://www.linkedin.com/in/ranit-pal-5b2488241/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+      <form class="contact-form" action="mailto:ranitpal57@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Message" rows="4" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Developed by Ranit Pal</small>
+      <div class="footer-links">
+        <a class="social-link" href="https://github.com/ranit57" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="social-link" href="https://www.linkedin.com/in/ranit-pal-5b2488241/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
