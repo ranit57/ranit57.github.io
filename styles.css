@@ -66,7 +66,7 @@ h5{margin:0 0 12px 0;font-size:.95rem;color:var(--accent);text-transform:upperca
 .card.open{box-shadow:0 18px 40px rgba(2,6,23,0.55)}
 
 /* Footer stylized badge */
-.site-footer{padding:18px 0;color:var(--muted);display:flex;align-items:center;justify-content:space-between;gap:12px}
+.site-footer{padding:18px 0;color:var(--muted);display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:3px solid var(--green);margin-top:40px;padding-top:28px}
 .site-footer small{background:linear-gradient(90deg,var(--green),#34d399);color:#062814;padding:10px 14px;border-radius:999px;font-weight:700;letter-spacing:.4px;box-shadow:0 8px 30px rgba(16,185,129,0.12)}
 .footer-links a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.02)}
 
